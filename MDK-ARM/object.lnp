@@ -1,0 +1,11 @@
+--cpu Cortex-M3
+".\startup_stm32f10x_hd.o"
+".\main.o"
+".\stm32f1xx_it.o"
+".\sys.o"
+".\delay.o"
+".\gpio.o"
+--strict --scatter ".\object.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\object.map" -o .\object.axf
