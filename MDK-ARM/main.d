@@ -6,3 +6,8 @@
 .\main.o: ..\Drivers\Inc\system_stm32f10x.h
 .\main.o: ..\Drivers\Inc\delay.h
 .\main.o: ..\Drivers\Inc\gpio.h
+.\main.o: ..\USER\Inc\lcd12864.h
+.\main.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\main.o: ..\USER\Inc\key.h
+.\main.o: ..\USER\Inc\usart.h
+.\main.o: ..\USER\Inc\muti_menu.h

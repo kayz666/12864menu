@@ -3,7 +3,7 @@
 
 #include "sys.h"
 
-#define LED0 PBout(5)	// DS0
+#define LED0 PBout(9)	// DS0
 #define LED1 PEout(5)	// DS1	
 
 #define LED0_H LED0=1
@@ -12,6 +12,11 @@
 #define LED1_H LED1=1
 #define LED1_L LED1=0
 #define LED1_T LED1=!LED1
+
+#define KEY_UP PAin(0)
+#define KEY_DOWN PEin(3)
+#define KEY_LEFT PEin(2)
+#define KEY_RIGHT PEin(4)
 
 
 void GPIO_Init(void);

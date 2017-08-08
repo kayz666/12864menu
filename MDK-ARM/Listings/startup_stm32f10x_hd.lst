@@ -266,7 +266,7 @@ ARM Macro Assembler    Page 5
 
   155 00000000         ;LDR     R0, =SystemInit 
   156 00000000         ;BLX     R0                  
-  157 00000000 4808            LDR              R0, =__main
+  157 00000000 4805            LDR              R0, =__main
   158 00000002 4700            BX               R0
   159 00000004                 ENDP
   160 00000004         
@@ -548,33 +548,22 @@ ARM Macro Assembler    Page 9
   336 00000018         ;*******************************************************
                        ************************
   337 00000018                 IF               :DEF:__MICROLIB
-  344 00000018         
-  345 00000018                 IMPORT           __use_two_region_memory
-  346 00000018                 EXPORT           __user_initial_stackheap
-  347 00000018         
-  348 00000018         __user_initial_stackheap
-  349 00000018         
-  350 00000018 4803            LDR              R0, =  Heap_Mem
-  351 0000001A 4904            LDR              R1, =(Stack_Mem + Stack_Size)
-  352 0000001C 4A02            LDR              R2, = (Heap_Mem +  Heap_Size)
-  353 0000001E 4B04            LDR              R3, = Stack_Mem
-  354 00000020 4770            BX               LR
-  355 00000022         
-  356 00000022 00 00           ALIGN
-  357 00000024         
-  358 00000024                 ENDIF
-  359 00000024         
-  360 00000024                 END
-              00000000 
-              00000000 
-              00000400 
+  338 00000018         
+  339 00000018                 EXPORT           __initial_sp
+  340 00000018                 EXPORT           __heap_base
+  341 00000018                 EXPORT           __heap_limit
+  342 00000018         
+  343 00000018                 ELSE
+  358                          ENDIF
+  359 00000018         
+  360 00000018                 END
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=.\startup_stm32f10x_hd.d -o.\startup_stm32f10x_hd.o -IC:\Users\lan
 50\Desktop\test1\MDK-ARM\RTE -IC:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device
-\Include -IC:\Keil\ARM\CMSIS\Include --predefine="__UVISION_VERSION SETA 514" -
--predefine="STM32F10X_HD SETA 1" --list=.\listings\startup_stm32f10x_hd.lst ..\
-Drivers\startup_stm32f10x_hd.s
+\Include -IC:\Keil\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" --predefin
+e="__UVISION_VERSION SETA 514" --predefine="STM32F10X_HD SETA 1" --list=.\listi
+ngs\startup_stm32f10x_hd.lst ..\Drivers\startup_stm32f10x_hd.s
 
 
 
@@ -595,9 +584,8 @@ Symbol: Stack_Mem
    Definitions
       At line 39 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
-      At line 351 in file ..\Drivers\startup_stm32f10x_hd.s
-      At line 353 in file ..\Drivers\startup_stm32f10x_hd.s
-
+      None
+Comment: Stack_Mem unused
 __initial_sp 00000400
 
 Symbol: __initial_sp
@@ -605,7 +593,8 @@ Symbol: __initial_sp
       At line 40 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
       At line 64 in file ..\Drivers\startup_stm32f10x_hd.s
-Comment: __initial_sp used once
+      At line 339 in file ..\Drivers\startup_stm32f10x_hd.s
+
 3 symbols
 
 
@@ -627,25 +616,24 @@ Symbol: Heap_Mem
    Definitions
       At line 51 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
-      At line 350 in file ..\Drivers\startup_stm32f10x_hd.s
-      At line 352 in file ..\Drivers\startup_stm32f10x_hd.s
-
+      None
+Comment: Heap_Mem unused
 __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
       At line 50 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
-      None
-Comment: __heap_base unused
+      At line 340 in file ..\Drivers\startup_stm32f10x_hd.s
+Comment: __heap_base used once
 __heap_limit 00000000
 
 Symbol: __heap_limit
    Definitions
       At line 52 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
-      None
-Comment: __heap_limit unused
+      At line 341 in file ..\Drivers\startup_stm32f10x_hd.s
+Comment: __heap_limit used once
 4 symbols
 
 
@@ -1392,21 +1380,7 @@ Symbol: WWDG_IRQHandler
       At line 82 in file ..\Drivers\startup_stm32f10x_hd.s
       At line 207 in file ..\Drivers\startup_stm32f10x_hd.s
 
-__user_initial_stackheap 00000018
-
-Symbol: __user_initial_stackheap
-
-
-
-ARM Macro Assembler    Page 12 Alphabetic symbol ordering
-Relocatable symbols
-
-   Definitions
-      At line 348 in file ..\Drivers\startup_stm32f10x_hd.s
-   Uses
-      At line 346 in file ..\Drivers\startup_stm32f10x_hd.s
-Comment: __user_initial_stackheap used once
-73 symbols
+72 symbols
 
 
 
@@ -1420,8 +1394,7 @@ Symbol: Heap_Size
       At line 47 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
       At line 51 in file ..\Drivers\startup_stm32f10x_hd.s
-      At line 352 in file ..\Drivers\startup_stm32f10x_hd.s
-
+Comment: Heap_Size used once
 Stack_Size 00000400
 
 Symbol: Stack_Size
@@ -1429,8 +1402,7 @@ Symbol: Stack_Size
       At line 36 in file ..\Drivers\startup_stm32f10x_hd.s
    Uses
       At line 39 in file ..\Drivers\startup_stm32f10x_hd.s
-      At line 351 in file ..\Drivers\startup_stm32f10x_hd.s
-
+Comment: Stack_Size used once
 __Vectors_Size 00000130
 
 Symbol: __Vectors_Size
@@ -1454,13 +1426,5 @@ Symbol: __main
    Uses
       At line 157 in file ..\Drivers\startup_stm32f10x_hd.s
 Comment: __main used once
-__use_two_region_memory 00000000
-
-Symbol: __use_two_region_memory
-   Definitions
-      At line 345 in file ..\Drivers\startup_stm32f10x_hd.s
-   Uses
-      None
-Comment: __use_two_region_memory unused
-2 symbols
-424 symbols in table
+1 symbol
+421 symbols in table

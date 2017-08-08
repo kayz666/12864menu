@@ -5,7 +5,11 @@
 ".\sys.o"
 ".\delay.o"
 ".\gpio.o"
---strict --scatter ".\object.sct"
+".\lcd12864.o"
+".\muti_menu.o"
+".\key.o"
+".\usart.o"
+--library_type=microlib --strict --scatter ".\object.sct"
 --summary_stderr --info summarysizes --map --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list ".\Listings\object.map" -o .\object.axf

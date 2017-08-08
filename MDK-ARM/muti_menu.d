@@ -1,0 +1,13 @@
+.\muti_menu.o: ..\USER\Src\muti_menu.c
+.\muti_menu.o: ..\USER\Inc\muti_menu.h
+.\muti_menu.o: ..\Drivers\Inc\delay.h
+.\muti_menu.o: ..\Drivers\Inc\sys.h
+.\muti_menu.o: ..\Drivers\Inc\stm32f10x.h
+.\muti_menu.o: ..\Drivers\Inc\core_cm3.h
+.\muti_menu.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\muti_menu.o: ..\Drivers\Inc\system_stm32f10x.h
+.\muti_menu.o: ..\USER\Inc\lcd12864.h
+.\muti_menu.o: ..\USER\Inc\key.h
+.\muti_menu.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\muti_menu.o: C:\Keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\muti_menu.o: C:\Keil\ARM\ARMCC\Bin\..\include\string.h
