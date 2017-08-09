@@ -16,12 +16,12 @@ typedef void(*FUNC_POINT)(void);
 typedef struct MenuItem
 {
 	u8 num;   //本级菜单数量
+	u8 recordSubNum;
 	char *menuName;
 	char *submenuName[SUBMENU_MAXNUM];
-	
 	struct MenuItem **submenuPtr;
 	struct MenuItem *parent;
-	void (**func)();
+	FUNC_POINT func;
 	FUNC_POINT funcKeyUP;
 	FUNC_POINT funcKeyDOWN;
 	FUNC_POINT funcKeyLEFT;

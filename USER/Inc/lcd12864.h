@@ -23,6 +23,8 @@
 void initLCD12864(void);
 void displayString(unsigned char row,unsigned char col,char *ptr);
 void clearLcdTxt(void);
+void clearLcd(void);
+void dispBlack(void);
 void writeWhiteLine(unsigned char line);
 
 

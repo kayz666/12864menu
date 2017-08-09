@@ -18,7 +18,7 @@ void GPIO_Init(void)
 	//RCC->APB2ENR|=1<<5;			//PORTD
 	RCC->APB2ENR|=1<<6;    	//PORTE
 	//RCC->APB2ENR|=1<<7;    	//PORTF
-	RCC->APB2ENR|=1<<8;    	//PORTG
+	//RCC->APB2ENR|=1<<8;    	//PORTG
 	
 	//ÅäÖÃIOÄ£Ê½
 	GPIOA->CRL&=0XFFFFFFF0;
@@ -51,9 +51,9 @@ void GPIO_Init(void)
 	GPIOE->ODR|=1<<3;
 	GPIOE->ODR|=1<<4;
 	
-	GPIOG->CRH&=0X0FFFFFFF; 
-	GPIOG->CRH|=0X30000000;  	 
-  GPIOG->ODR|=1<<15;      
+	//GPIOG->CRH&=0X0FFFFFFF; 
+	//GPIOG->CRH|=0X30000000;  	 
+  //GPIOG->ODR|=1<<15;      
 	
 }
 

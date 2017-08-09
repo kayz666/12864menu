@@ -172,7 +172,7 @@ void writeWhiteLine(unsigned char line)
 {
 	if(line==0)
 	{
-		if (line == whiteLine)
+		if (line != whiteLine)
 		{
 			writeWhite(whiteLine,0,16,0,1);
 			whiteLine = line;
@@ -187,7 +187,11 @@ void writeWhiteLine(unsigned char line)
 	}
 }
 
-
+void clearLcd(void)
+{
+	clearLcdTxt();
+	writeWhiteLine(0);
+}
 //«Â∆¡txt
 void clearLcdTxt(void)
 {
