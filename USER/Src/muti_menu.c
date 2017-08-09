@@ -135,7 +135,7 @@ void displayCurrentMenu(void)
 	{
 		displayString(0,0,CurrMenu.menu->menuName);
 		CurrMenu.menu->recordSubNum<3?(page=1):(page=CurrMenu.menu->recordSubNum/3+1);
-		printf("%d",CurrMenu.menu->recordSubNum);
+		//printf("%d",CurrMenu.menu->recordSubNum);
 		for(i=0;i<3;i++)
 		{
 			j=(page-1)*3+i;

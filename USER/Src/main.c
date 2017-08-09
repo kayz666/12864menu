@@ -6,7 +6,7 @@
 #include "key.h"
 #include "usart.h"
 #include "muti_menu.h"
-
+#include "timer.h"
 
 
 
@@ -18,6 +18,7 @@ int main(void)
 	Stm32_Clock_Init(9);
 	delay_init(72);	    //延时函数初始化	  
 	GPIO_Init();
+	TIM3_Int_Init(4999,7199);  //5000-1   500ms
 	uart_init(72,115200);
 	initLCD12864();
 	delay_ms(100);
@@ -30,7 +31,7 @@ int main(void)
 		if (i==10)
 		{
 			displayCurrentMenu();
-			LED0_T;
+			//LED0_T;
 		}
 		
 		delay_ms(10);

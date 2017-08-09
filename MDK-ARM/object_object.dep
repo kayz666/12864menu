@@ -1,78 +1,0 @@
-Dependencies for Project 'object', Target 'object': (DO NOT MODIFY !)
-F (..\Drivers\startup_stm32f10x_hd.s)(0x57A74688)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 514" --pd "STM32F10X_HD SETA 1"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\startup_stm32f10x_hd.o --depend .\startup_stm32f10x_hd.d)
-F (..\USER\Src\main.c)(0x59893F4E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\main.o --omf_browse .\main.crf --depend .\main.d)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\delay.h)(0x57A74687)
-I (..\Drivers\Inc\gpio.h)(0x59893ED3)
-I (..\USER\Inc\lcd12864.h)(0x598A9741)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (..\USER\Inc\key.h)(0x59891440)
-I (..\USER\Inc\usart.h)(0x57A74672)
-I (..\USER\Inc\muti_menu.h)(0x598A9A6E)
-F (..\USER\Src\stm32f1xx_it.c)(0x598813E3)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\stm32f1xx_it.o --omf_browse .\stm32f1xx_it.crf --depend .\stm32f1xx_it.d)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-F (..\Drivers\Src\sys.c)(0x57A74687)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\sys.o --omf_browse .\sys.crf --depend .\sys.d)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-F (..\Drivers\Src\delay.c)(0x57A74687)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\delay.o --omf_browse .\delay.crf --depend .\delay.d)
-I (..\Drivers\Inc\delay.h)(0x57A74687)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-F (..\Drivers\Src\gpio.c)(0x598A68D2)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\gpio.o --omf_browse .\gpio.crf --depend .\gpio.d)
-I (..\Drivers\Inc\gpio.h)(0x59893ED3)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-F (..\USER\Src\lcd12864.c)(0x598A9A6E)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\lcd12864.o --omf_browse .\lcd12864.crf --depend .\lcd12864.d)
-I (..\USER\Inc\lcd12864.h)(0x598A9741)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\delay.h)(0x57A74687)
-F (..\USER\Src\muti_menu.c)(0x598A9B2C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\muti_menu.o --omf_browse .\muti_menu.crf --depend .\muti_menu.d)
-I (..\USER\Inc\muti_menu.h)(0x598A9A6E)
-I (..\Drivers\Inc\delay.h)(0x57A74687)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-I (..\USER\Inc\lcd12864.h)(0x598A9741)
-I (..\USER\Inc\key.h)(0x59891440)
-I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x5475F300)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)
-I (C:\Keil\ARM\ARMCC\include\string.h)(0x5475F300)
-F (..\USER\Src\key.c)(0x59891FF7)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\key.o --omf_browse .\key.crf --depend .\key.d)
-I (..\USER\Inc\key.h)(0x59891440)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\gpio.h)(0x59893ED3)
-F (..\USER\Src\usart.c)(0x57A74672)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Drivers\Inc -I..\USER\Inc-I C:\Users\lan50\Desktop\test1\MDK-ARM\RTE-I C:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\Keil\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_HD-o .\usart.o --omf_browse .\usart.crf --depend .\usart.d)
-I (..\USER\Inc\usart.h)(0x57A74672)
-I (..\Drivers\Inc\sys.h)(0x57A74687)
-I (..\Drivers\Inc\stm32f10x.h)(0x57A74687)
-I (..\Drivers\Inc\core_cm3.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x5475F300)
-I (..\Drivers\Inc\system_stm32f10x.h)(0x57A74687)
-I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x5475F300)

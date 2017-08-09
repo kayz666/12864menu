@@ -365,7 +365,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\Drivers\Inc;..\USER\Inc</IncludePath>
+              <IncludePath>..\Drivers\Inc;..\USER\Inc;..\Drivers\SYSTEM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -416,7 +416,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>User</GroupName>
+          <GroupName>App/User</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
@@ -428,20 +428,25 @@
               <FileType>1</FileType>
               <FilePath>..\USER\Src\stm32f1xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>muti_menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\muti_menu.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Drivers</GroupName>
+          <GroupName>Drivers/system</GroupName>
           <Files>
-            <File>
-              <FileName>sys.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\Src\sys.c</FilePath>
-            </File>
             <File>
               <FileName>delay.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Drivers\Src\delay.c</FilePath>
+              <FilePath>..\Drivers\SYSTEM\delay.c</FilePath>
+            </File>
+            <File>
+              <FileName>sys.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\SYSTEM\sys.c</FilePath>
             </File>
             <File>
               <FileName>gpio.c</FileName>
@@ -449,24 +454,29 @@
               <FilePath>..\Drivers\Src\gpio.c</FilePath>
             </File>
             <File>
-              <FileName>lcd12864.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\USER\Src\lcd12864.c</FilePath>
-            </File>
-            <File>
-              <FileName>muti_menu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\USER\Src\muti_menu.c</FilePath>
-            </File>
-            <File>
               <FileName>key.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\USER\Src\key.c</FilePath>
+              <FilePath>..\Drivers\Src\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\Src\timer.c</FilePath>
             </File>
             <File>
               <FileName>usart.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\USER\Src\usart.c</FilePath>
+              <FilePath>..\Drivers\Src\usart.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Dirvers/user</GroupName>
+          <Files>
+            <File>
+              <FileName>lcd12864.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\lcd12864.c</FilePath>
             </File>
           </Files>
         </Group>
