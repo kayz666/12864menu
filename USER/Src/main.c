@@ -38,18 +38,6 @@ int main(void)
 	}
 }
  
-//void show(void)
-//{
-//	char s[18]={0};
-//	sprintf(s,"速度=%dHH  %d   ",icnt,Trg);
-//	displayString(0,0,"我的同学  \x10");
-//	displayString(1,0,"叫哈哈11  \x10");
-//	displayString(2,0,"叫哈哈12  \x10");
-//	displayString(3,0,s);
-//	writeWhiteLine(4);
-//	LED0_T;
-//	printf("%d",icnt);
-//}
 
 
 
