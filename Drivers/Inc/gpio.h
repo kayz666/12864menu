@@ -13,10 +13,10 @@
 #define LED1_L LED1=0
 #define LED1_T LED1=!LED1
 
-#define KEY_UP PAin(0)
-#define KEY_DOWN PEin(3)
-#define KEY_LEFT PEin(2)
-#define KEY_RIGHT PEin(4)
+#define KEY_UP !PEin(1)
+#define KEY_DOWN !PEin(3)
+#define KEY_LEFT !PEin(2)
+#define KEY_RIGHT !PEin(4)
 
 
 void GPIO_Init(void);

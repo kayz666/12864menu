@@ -153,7 +153,7 @@
             <CpuDllArguments></CpuDllArguments>
             <PeripheralDll></PeripheralDll>
             <PeripheralDllArguments></PeripheralDllArguments>
-            <InitializationFile></InitializationFile>
+            <InitializationFile>.\debug.ini</InitializationFile>
           </SimDlls>
           <TargetDlls>
             <CpuDll></CpuDll>
@@ -433,6 +433,11 @@
               <FileType>1</FileType>
               <FilePath>..\USER\Src\muti_menu.c</FilePath>
             </File>
+            <File>
+              <FileName>controlapp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\controlapp.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -477,6 +482,16 @@
               <FileName>lcd12864.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\Src\lcd12864.c</FilePath>
+            </File>
+            <File>
+              <FileName>step_motor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\step_motor.c</FilePath>
+            </File>
+            <File>
+              <FileName>hx711.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Src\hx711.c</FilePath>
             </File>
           </Files>
         </Group>

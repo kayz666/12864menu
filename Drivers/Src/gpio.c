@@ -21,9 +21,21 @@ void GPIO_Init(void)
 	//RCC->APB2ENR|=1<<8;    	//PORTG
 	
 	//ÅäÖÃIOÄ£Ê½
-	GPIOA->CRL&=0XFFFFFFF0;
-	GPIOA->CRL|=0X00000008;
-	GPIOA->ODR|=1<<0;      
+	GPIOA->CRL&=0X0000FF0F;
+	GPIOA->CRL|=0X333300B0;
+
+	GPIOA->CRH&=0XFFFF0FF0;
+	GPIOA->CRH|=0X00003003;
+	
+	//GPIOA->ODR|=1<<0;      
+	GPIOA->ODR|=1<<4;      
+	GPIOA->ODR|=1<<5;      
+	GPIOA->ODR|=1<<6;      
+	GPIOA->ODR|=1<<7;  
+	GPIOA->ODR|=1<<8;      
+	GPIOA->ODR|=1<<9;  
+	
+	
 		
 	GPIOB->CRL&=0XFF0FFFFF; 
 	GPIOB->CRL|=0X00300000;	 
@@ -44,12 +56,14 @@ void GPIO_Init(void)
   GPIOC->ODR|=1<<8;      
 	GPIOC->ODR|=1<<9; 
 	
-	GPIOE->CRL&=0XFF0000FF;
-	GPIOE->CRL|=0X00388800;
-	GPIOE->ODR|=1<<5;      
+	GPIOE->CRL&=0XFF00000F;
+	GPIOE->CRL|=0X00388880;
+	GPIOE->ODR|=1<<1;
 	GPIOE->ODR|=1<<2;
 	GPIOE->ODR|=1<<3;
 	GPIOE->ODR|=1<<4;
+	GPIOE->ODR|=1<<5;      
+	
 	
 	//GPIOG->CRH&=0X0FFFFFFF; 
 	//GPIOG->CRH|=0X30000000;  	 
